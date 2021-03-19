@@ -1,6 +1,8 @@
+import "./Header.css";
+
 const Header = ({ title }) => {
   return (
-    <header className="center-text">
+    <header>
       <h1>{title}</h1>
     </header>
   );
