@@ -1,4 +1,4 @@
-import React from "react";
+import "./DogPhoto.css";
 
 const DogPhoto = ({ dogPhoto }) => {
   return <img src={dogPhoto} alt="dog" />;

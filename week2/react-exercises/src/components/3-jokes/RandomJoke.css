@@ -1,0 +1,12 @@
+.joke-container {
+  margin: 2rem 0;
+}
+
+.joke-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.joke-container p {
+    font-size: 1.3rem;
+}

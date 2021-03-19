@@ -1,4 +1,4 @@
-import React from "react";
+import "./FriendProfile.css"
 
 const FriendProfile = ({ friendInfo }) => {
   const { name, location, email, phone } = friendInfo;

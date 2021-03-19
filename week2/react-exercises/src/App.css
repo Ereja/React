@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
+body {
+  color: #fff;
+  background-color: rgb(24, 20, 20);
 }
 
-span {
-  font-weight: bold;
+.container {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

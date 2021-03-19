@@ -1,0 +1,20 @@
+button {
+  width: 250px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #750666;
+  padding: 0.7rem 2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #434343;
+  letter-spacing: 1.5px;
+  transition: all 0.4s ease 0s;
+}

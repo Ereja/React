@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "./Friends.css";
 import Button from "./Button";
 import FriendProfile from "./FriendProfile";
 
@@ -26,7 +27,7 @@ const Friend = () => {
       <Button getFriend={getFriend} />
       {isLoading && <p>Loading...</p>}
       {hasError && <p>Something went wrong!</p>}
-      {!hasError && Object.entries(friend).length !== 0 && !isLoading && (
+      {!hasError && Object.entries(friend).length !== 0 && (
         <FriendProfile friendInfo={friend} />
       )}
     </div>

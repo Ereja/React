@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "./DogGallery.css";
 import Button from "./Button";
 import DogPhoto from "./DogPhoto";
 
@@ -27,9 +28,8 @@ const DogGallery = () => {
       {isLoading && <p>Loading...</p>}
       {hasError && <p>Something went wrong!</p>}
       {dogPhotos.length === 0 && <p>Get your first dog!</p>}
-      <div className="dogs-container">
+      <div className="dog-gallery">
         {!hasError &&
-          !isLoading &&
           dogPhotos.map(photo => (
             <DogPhoto
               key={Math.floor(Math.random() * 1000000)}
