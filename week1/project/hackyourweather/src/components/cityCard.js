@@ -1,4 +1,4 @@
-import "./CityCard.css"
+import "./CityCard.css";
 
 const CityCard = ({
   key,

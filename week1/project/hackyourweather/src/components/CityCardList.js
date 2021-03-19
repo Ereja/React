@@ -1,6 +1,6 @@
 import cityWeather from "../city-weather";
 import CityCard from "./CityCard";
-import "./CityCardList.css"
+import "./CityCardList.css";
 
 const CityCardList = () => {
   return (
