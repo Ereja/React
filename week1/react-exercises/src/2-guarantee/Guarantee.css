@@ -1,0 +1,12 @@
+.guarantees {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.guarantees img {
+  width: 50px;
+}

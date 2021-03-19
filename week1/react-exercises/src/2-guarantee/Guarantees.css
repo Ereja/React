@@ -1,0 +1,5 @@
+.guarantees-container {
+  margin: 0 3rem;
+  display: flex;
+  border: 1px solid rgb(170, 31, 77);
+}

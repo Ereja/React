@@ -1,16 +1,16 @@
 import "./App.css";
 import HobbyList from "./1-hobbies/Hobbies";
-import Guarantee from "./2-guarantee/Guarantee";
+import Guarantees from "./2-guarantee/Guarantees";
 import Counter from "./3-counter/Counter";
 
-function App() {
+const App = () => {
   return (
     <div className="main-container">
       <HobbyList />
-      <Guarantee />
+      <Guarantees />
       <Counter />
     </div>
   );
-}
+};
 
 export default App;

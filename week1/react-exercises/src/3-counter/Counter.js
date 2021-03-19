@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "./Counter.css";
+import Count from "./Count";
+import Button from "./Button";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -10,15 +13,11 @@ const Counter = () => {
   return (
     <div className="counter">
       <h1>Counter:</h1>
-      <Count currCount={count} />
+      <Count count={count} />
       <Button addOne={increaseCount} />
       <h3>{feedback}</h3>
     </div>
   );
 };
-
-const Count = props => <h2>{props.currCount}</h2>;
-
-const Button = props => <button onClick={props.addOne}>Add 1!</button>;
 
 export default Counter;

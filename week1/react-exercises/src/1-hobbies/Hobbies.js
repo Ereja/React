@@ -1,4 +1,5 @@
-import React from "react";
+import "./Hobbies.css";
+import Hobby from "./Hobby";
 
 const HobbyList = () => {
   const hobbies = [
@@ -13,15 +14,11 @@ const HobbyList = () => {
       <h1>Extreme Hobbies:</h1>
       <ul>
         {hobbies.map((hobby, i) => (
-          <Hobbies key={i} hobby_={hobby} />
+          <Hobby key={hobby} hobby={hobby} />
         ))}
       </ul>
     </div>
   );
-};
-
-const Hobbies = props => {
-  return <li>{props.hobby_}</li>;
 };
 
 export default HobbyList;
