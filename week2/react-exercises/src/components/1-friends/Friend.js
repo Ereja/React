@@ -14,10 +14,11 @@ const Friend = () => {
       .then(res => res.json())
       .then(data => {
         setFriend(data.results[0]);
-        setLoading(false);
       })
       .catch(err => {
         setError(true);
+      })
+      .finally(() => {
         setLoading(false);
       });
   };

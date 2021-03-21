@@ -14,10 +14,11 @@ const DogGallery = () => {
       .then(res => res.json())
       .then(data => {
         setDogPhotos([...dogPhotos, data.message]);
-        setLoading(false);
       })
       .catch(err => {
         setError(true);
+      })
+      .finally(() => {
         setLoading(false);
       });
   };
