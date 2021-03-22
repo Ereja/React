@@ -30,7 +30,7 @@ const Input = () => {
       if (city) {
         setLoading(true);
         setShowCityCard(true);
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}
 `);
         if (response.ok) {
           //week2 asks for one city card
