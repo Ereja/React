@@ -46,6 +46,7 @@ const Input = () => {
         handleError({
           errorMessage: "City not found! Please try another city.",
         });
+        return;
       }
       const data = await response.json();
       //if city is already fetched, remove it from the list and re-add at the top of the list, instead of placing multiple cards with the same city
