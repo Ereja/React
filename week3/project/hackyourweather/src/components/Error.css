@@ -1,0 +1,12 @@
+.error-container {
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 40vw;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background-color: rgba(255, 134, 134, 0.739);
+  border: 1px solid black;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.924);
+}
