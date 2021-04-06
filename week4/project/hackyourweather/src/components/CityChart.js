@@ -21,29 +21,31 @@ const CityChart = () => {
   const [chartData, setChartdata] = useState([]);
   const { hasError, isLoading, fetchData } = useFetch(url);
 
-  const getWeather = async () => {
-    const data = await fetchData();
-    if (data) {
-      setCityName({ city: data.city.name, countryCode: data.city.country });
-      setChartdata(data);
-    }
-  };
-
   useEffect(() => {
+    const getWeather = async () => {
+      const data = await fetchData();
+      if (data) {
+        setCityName({ city: data.city.name, countryCode: data.city.country });
+        setChartdata(data);
+      }
+    };
     getWeather();
-  }, []);
+  }, [cityId]);
 
   return (
     <div className="flex-container">
       <h2>5 day forecast</h2>
-      <h3>
-        {cityName.city}, <span>{cityName.countryCode}</span>
-      </h3>
+      {!hasError.show && !isLoading && (
+        <h3>
+          {cityName.city}, <span>{cityName.countryCode}</span>
+        </h3>
+      )}
+
       {isLoading && <Loading />}
 
       {hasError.show && <Error errorMessage={hasError.errorMessage} />}
 
-      {!isLoading && (
+      {!hasError.show && !isLoading && (
         <LineChart
           style={{
             backgroundColor: "rgba(0, 0, 0, 0.7)",
